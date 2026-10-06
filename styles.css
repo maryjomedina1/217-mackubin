@@ -147,3 +147,6 @@ h2 { font-size: clamp(44px, 6vw, 80px); line-height: 0.95; }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+.site-footer a { color: inherit; text-underline-offset: 3px; }
+.site-footer a:hover { color: var(--accent); }
