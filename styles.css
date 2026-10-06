@@ -55,6 +55,7 @@ h2 { font-size: clamp(44px, 6vw, 80px); line-height: 0.95; }
 .btn--outline { border: 1px solid var(--ink); }
 .btn--accent { background: var(--accent); color: #fff; }
 .btn--accent:hover { background: var(--ink); }
+.btn[disabled] { opacity: 0.6; cursor: progress; }
 
 /* Header */
 .site-header {
@@ -127,7 +128,8 @@ h2 { font-size: clamp(44px, 6vw, 80px); line-height: 0.95; }
   background: #F7F6F3; font: inherit; font-size: 18px; color: var(--ink); border-radius: 0;
 }
 .thanks { min-height: 52px; display: flex; align-items: center; font-size: 22px; font-weight: 600; }
-.thanks[hidden], .signup[hidden] { display: none; }
+.signup-error { color: var(--accent); font-size: 16px; }
+.thanks[hidden], .signup[hidden], .signup-error[hidden] { display: none; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--rule); }
